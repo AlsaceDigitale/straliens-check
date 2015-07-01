@@ -1,0 +1,15 @@
+<ion-view view-title="Liste des points">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate  item-icon-right" ng-repeat="marker in markers" type="item-text-wrap">
+        <h2>{{marker.url}}</h2>
+        <p><strong>Description :</strong> {{marker.name}}</p>
+        <p><strong>Latitude :</strong> {{marker.lat}}</p>
+        <p><strong>Longitude :</strong> {{marker.lng}}</p>
+        <ion-option-button class="button-assertive" ng-click="remove(marker)">
+          Supprimer
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
